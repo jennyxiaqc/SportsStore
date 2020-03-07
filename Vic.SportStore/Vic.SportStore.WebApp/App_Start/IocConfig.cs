@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using Vic.SportStore.Domain.Concrete;
 using Vic.SportStore.Domain.Abstract;
 
+
 namespace Vic.SportStore.WebApp
 {
     public class IocConfig
@@ -17,7 +18,7 @@ namespace Vic.SportStore.WebApp
             var builder = new ContainerBuilder();
             builder.RegisterControllers(typeof(MvcApplication).Assembly).PropertiesAutowired();
 
-            builder.RegisterInstance<IProductsRepository>(new InMemoryProductsRepository()).PropertiesAutowired();
+            builder.RegisterInstance<IProductsRepository>(new EFProductRepository()).PropertiesAutowired();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
