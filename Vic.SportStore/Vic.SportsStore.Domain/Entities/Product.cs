@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vic.SuperStore.Domain.Entities
+namespace Vic.SportStore.Domain.Entities
 {
     public class Product
     {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Vic.SuperStore.Domain.Entities;
+using Vic.SportStore.Domain.Entities;
 
-namespace Vic.SuperStore.Domain.Abstract
+namespace Vic.SportStore.Domain.Abstract
 {
     public interface IProductsRepository
     {

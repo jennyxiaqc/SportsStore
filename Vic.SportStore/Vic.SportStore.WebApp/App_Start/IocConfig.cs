@@ -5,8 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Vic.portStore.Domain.Concrete;
-using Vic.SuperStore.Domain.Abstract;
+using Vic.SportStore.Domain.Concrete;
+using Vic.SportStore.Domain.Abstract;
 
 namespace Vic.SportStore.WebApp
 {
