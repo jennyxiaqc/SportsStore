@@ -61,10 +61,6 @@
       <Project>{f1894a5d-e903-4d39-8bb2-b85375f04931}</Project>
       <Name>Vic.SportStore.WebApp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Vic.SuperStore.Domain\Vic.SuperStore.Domain.csproj">
-      <Project>{6d7b1448-a1ea-4e9d-95cb-9235131c2b11}</Project>
-      <Name>Vic.SuperStore.Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
