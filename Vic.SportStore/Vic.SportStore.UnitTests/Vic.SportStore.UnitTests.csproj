@@ -8,8 +8,8 @@
     <ProjectGuid>{96DD0E13-D3A1-4643-B900-1A9E54C35FDD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Vic.SportsStore.UnitTests</RootNamespace>
-    <AssemblyName>Vic.SportsStore.UnitTests</AssemblyName>
+    <RootNamespace>Vic.SportStore.UnitTests</RootNamespace>
+    <AssemblyName>Vic.SportStore.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -57,6 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Vic.SportStore.Domain\Vic.SportStore.Domain.csproj">
+      <Project>{6d7b1448-a1ea-4e9d-95cb-9235131c2b11}</Project>
+      <Name>Vic.SportStore.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Vic.SportStore.WebApp\Vic.SportStore.WebApp.csproj">
       <Project>{f1894a5d-e903-4d39-8bb2-b85375f04931}</Project>
       <Name>Vic.SportStore.WebApp</Name>

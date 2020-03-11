@@ -155,7 +155,7 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Vic.SportsStore.Domain\Vic.SportStore.Domain.csproj">
+    <ProjectReference Include="..\Vic.SportStore.Domain\Vic.SportStore.Domain.csproj">
       <Project>{6d7b1448-a1ea-4e9d-95cb-9235131c2b11}</Project>
       <Name>Vic.SportStore.Domain</Name>
     </ProjectReference>
