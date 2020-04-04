@@ -9,7 +9,7 @@ namespace Vic.SportStore.WebApp.Infrastructure.Binders
 {
     public class CartModelBinder : IModelBinder  //Mvc interface
     {
-        private const string sessionKey = "Cart";
+        private const string sessionKey = "cart";
         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
             // get the Cart from the session

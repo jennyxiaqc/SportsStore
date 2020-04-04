@@ -22,6 +22,18 @@ namespace Vic.SportStore.Domain.Concrete
         public int ServerPort = 587;
         public bool WriteAsFile = true;
         public string FileLocation = @"c:\sports_store_emails";
+
+        //Gmail SMTP server address: smtp.gmail.com.
+        //Gmail SMTP username: Your Gmail address(for example, example @gmail.com)
+        //Gmail SMTP password: Your Gmail password.
+        //Gmail SMTP port(SSL) : 465.
+        //Gmail SMTP TLS/SSL required: Yes.
+         
+        //Hotmail SMTP server name: smtp.live.com
+        //Hotmail SMTP user name: your Hotmail account
+        //Hotmail SMTP password: your Hotmail password
+        //Hotmail SMTP port: 25 or 465
+
     }
 
     public class EmailOrderProcessor : IOrderProcessor
