@@ -14,6 +14,7 @@ namespace Vic.SportStore.WebApp.Controllers
         {
             repository = repo;
         }
+
         public PartialViewResult Menu(string category = null)
         {
             ViewBag.SelectedCategory = category;
@@ -22,7 +23,8 @@ namespace Vic.SportStore.WebApp.Controllers
             .Select(x => x.Category)
             .Distinct()
             .OrderBy(x => x);
-            return PartialView(categories);
+            return PartialView("FlexMenu", categories);
         }
+    
     }
 }
