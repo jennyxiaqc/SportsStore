@@ -1,7 +1,8 @@
 ﻿@model IEnumerable<string>
 @{
     bool horizontal = ((bool)(ViewContext.RouteData.Values["horizontalLayout"] ?? false));
-    string wrapperClasses = horizontal ? "btn-group btn-group-sm btn-group-justified" : null; }<div class="@wrapperClasses">
+    string wrapperClasses = horizontal ? "btn-group btn-group-sm btn-group-justified" : null; }
+<div class="@wrapperClasses">
     @Html.ActionLink("Home", "List", "Product",null,
     new
     {
