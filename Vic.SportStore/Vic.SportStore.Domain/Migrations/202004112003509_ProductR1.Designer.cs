@@ -13,7 +13,7 @@ namespace Vic.SportStore.Domain.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202004042112400_ProductR1"; }
+            get { return "202004112003509_ProductR1"; }
         }
         
         string IMigrationMetadata.Source

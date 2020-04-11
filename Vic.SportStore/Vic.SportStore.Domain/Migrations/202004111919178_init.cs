@@ -3,10 +3,20 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class ProductR1 : DbMigration
+    public partial class init : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.AdminUsers",
+                c => new
+                    {
+                        AdminUserId = c.Int(nullable: false, identity: true),
+                        Username = c.String(nullable: false),
+                        Password = c.String(nullable: false),
+                    })
+                .PrimaryKey(t => t.AdminUserId);
+            
             CreateTable(
                 "dbo.Products",
                 c => new
@@ -24,6 +34,7 @@
         public override void Down()
         {
             DropTable("dbo.Products");
+            DropTable("dbo.AdminUsers");
         }
     }
 }
