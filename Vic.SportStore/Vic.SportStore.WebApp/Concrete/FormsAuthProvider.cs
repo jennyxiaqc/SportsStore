@@ -7,18 +7,18 @@ using Vic.SportStore.WebApp.Abstract;
 
 namespace Vic.SportStore.WebApp.Concrete
 {
-    public class FormsAuthProvider : IAuthProvider
-    {
-        public bool Authenticate(string username, string password)
-        {
+	public class FormsAuthProvider : IAuthProvider
+	{
+		public bool Authenticate(string username, string password)
+		{
 #pragma warning disable CS0618 // Type or member is obsolete
-            bool result = FormsAuthentication.Authenticate(username, password);
+			bool result = FormsAuthentication.Authenticate(username, password);
 #pragma warning restore CS0618 // Type or member is obsolete
-            if (result)
-            {
-                FormsAuthentication.SetAuthCookie(username, false);
-            }
-            return result;
-        }
-    }
+			if (result)
+			{
+				FormsAuthentication.SetAuthCookie(username, false);
+			}
+			return result;
+		}
+	}
 }
